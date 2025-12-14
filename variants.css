@@ -1,0 +1,114 @@
+/* Custom background sizing to reduce blur on lower-res images */
+.custom-bg-size {
+	background-size: 1200px auto; /* scale to a fixed width to avoid excessive upscaling */
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Ensure full image is visible without cropping on sides */
+.custom-bg-contain {
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #e9f3ff; /* fallback fill color to avoid empty gutters */
+}
+
+/* Fill entire header area while maintaining center crop */
+.custom-bg-cover {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Optional: cap header height on very large screens to reduce extreme upscaling */
+.header-cap-height {
+	min-height: 20rem;
+}
+/* Variants - Custom Overrides for Bootstrap and Template Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+/* Header Navigation Styling (updated for Bootstrap navbar) */
+.navbar {
+	background-color: #333 !important;
+	font-family: 'Montserrat', 'Poppins', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	border-bottom: 4px solid #007bff;
+}
+.navbar .navbar-brand {
+	color: #fff !important;
+}
+.navbar .nav-link {
+	color: #fff !important;
+	margin: 0 8px;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+	text-decoration: underline;
+}
+.navbar-toggler {
+	border-color: rgba(255,255,255,0.4);
+}
+.navbar-toggler-icon {
+	filter: invert(1) grayscale(1);
+}
+
+/* Bootstrap Home Page Specific Styling */
+body {
+	background-color: #f5f5f5;
+}
+
+/* Main hero header styling */
+.bg-image-full {
+	position: relative;
+}
+
+/* Content sections with alternating background */
+section:nth-child(even) {
+	background-color: #fafafa;
+}
+
+section:nth-child(odd) {
+	background-color: #fff;
+}
+
+/* Bootstrap pages */
+section h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #2c3e50;
+	margin-bottom: 20px;
+	border-bottom: 3px solid #007bff;
+	padding-bottom: 10px;
+}
+
+section p.lead {
+	font-size: 1.15rem;
+	color: #555;
+	font-weight: 500;
+}
+
+/* Button styling */
+.btn-primary {
+	background-color: #007bff;
+	border: none;
+	font-weight: 600;
+	padding: 10px 25px;
+	transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+	background-color: #0056b3;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+	background-color: #1a1a1a;
+	border-top: 4px solid #007bff;
+}
+
+footer p {
+	font-weight: 500;
+}

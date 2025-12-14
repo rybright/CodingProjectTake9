@@ -1,0 +1,146 @@
+/* Custom Styles for Scratch Page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    background-color: #f0f8ff; /* Fallback color */
+    background-image: url('https://preview.redd.it/wanderers-guide-new-background-artwork-commissioned-by-v0-l7fug98b4use1.jpeg?auto=webp&s=94c85dda68d3c640fc25bf200f2f4a474a62bcf8');
+    background-size: cover; /* Fill the viewport */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+li {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+/* Quicklinks card styling */
+.quicklinks-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+}
+
+/* Game box style setting */
+.game-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 15px 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+header a:hover {
+    color: #007bff;
+}
+
+/* Game navigation anchors */
+.game-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.game-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: 0.3s ease;
+}
+
+.game-nav a:hover {
+    color: #1e30f3;
+    text-decoration: underline;
+}
+
+/* Shared borde for game images */
+.dominion-image {
+    border: 4px solid #000;
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 12px auto;
+}
+
+/*YouTube video - wider than game cards */
+.media-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+}
+
+/* Center video */
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+}
+
+/* Center and border Tableau embed */
+.tableauPlaceholder {
+    margin: 20px auto;
+    border: 4px solid #000;
+    border-radius: 8px;
+    overflow: hidden;
+}
